@@ -1,0 +1,112 @@
+06:31:10 **** Clean-only build of configuration Debug for project serverPROTO ****
+make clean 
+rm -rf  ./server.o  ./server.d  wikiserver
+ 
+06:31:10 **** Build of configuration Debug for project serverPROTO ****
+make all 
+Building file: ../server.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"server.d" -MT"server.d" -o "server.o" "../server.c"
+Finished building: ../server.c
+ 
+Building target: serverPROTO
+Invoking: Cross GCC Linker
+gcc  -o "serverPROTO"  ./server.o   
+Finished building target: serverPROTO
+ 
+06:31:17 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+make: Nothing to be done for `all'.
+06:31:26 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+make: Nothing to be done for `all'.
+06:31:44 **** Incremental Build of configuration Debug for project serverPROTO ****
+make all 
+make: Nothing to be done for `all'.
+06:31:52 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+make: Nothing to be done for `all'.
+06:51:58 **** Incremental Build of configuration Debug for project serverPROTO ****
+make all 
+Building file: ../server.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"server.d" -MT"server.d" -o "server.o" "../server.c"
+Finished building: ../server.c
+ 
+Building target: serverPROTO
+Invoking: Cross GCC Linker
+gcc  -o "serverPROTO"  ./server.o   
+Finished building target: serverPROTO
+ 
+06:52:05 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+Building file: ../client.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"client.d" -MT"client.d" -o "client.o" "../client.c"
+../client.c: In function ‘main’:
+../client.c:47:4: warning: passing argument 1 of ‘fgets’ from incompatible pointer type [enabled by default]
+In file included from ../client.c:11:0:
+/usr/include/stdio.h:624:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[300]’
+../client.c:48:60: error: incompatible type for argument 5 of ‘sendto’
+In file included from /usr/include/netinet/in.h:25:0,
+                 from /usr/include/arpa/inet.h:23,
+                 from ../client.c:15:
+/usr/include/i386-linux-gnu/sys/socket.h:155:16: note: expected ‘const struct sockaddr *’ but argument is of type ‘struct sockaddr_in’
+make: *** [client.o] Error 1
+06:53:03 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+Building file: ../client.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"client.d" -MT"client.d" -o "client.o" "../client.c"
+../client.c: In function ‘main’:
+../client.c:47:4: warning: passing argument 1 of ‘fgets’ from incompatible pointer type [enabled by default]
+In file included from ../client.c:11:0:
+/usr/include/stdio.h:624:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[300]’
+../client.c:48:4: error: incompatible type for argument 5 of ‘sendto’
+In file included from /usr/include/netinet/in.h:25:0,
+                 from /usr/include/arpa/inet.h:23,
+                 from ../client.c:15:
+/usr/include/i386-linux-gnu/sys/socket.h:155:16: note: expected ‘const struct sockaddr *’ but argument is of type ‘struct sockaddr_in’
+make: *** [client.o] Error 1
+06:56:11 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+Building file: ../client.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"client.d" -MT"client.d" -o "client.o" "../client.c"
+../client.c: In function ‘main’:
+../client.c:47:4: warning: passing argument 1 of ‘fgets’ from incompatible pointer type [enabled by default]
+In file included from ../client.c:11:0:
+/usr/include/stdio.h:624:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[300]’
+../client.c:48:4: error: incompatible type for argument 5 of ‘sendto’
+In file included from /usr/include/netinet/in.h:25:0,
+                 from /usr/include/arpa/inet.h:23,
+                 from ../client.c:15:
+/usr/include/i386-linux-gnu/sys/socket.h:155:16: note: expected ‘const struct sockaddr *’ but argument is of type ‘struct sockaddr_in’
+../client.c:49:5: warning: statement with no effect [-Wunused-value]
+../client.c:50:5: error: expected ‘;’ before ‘puts’
+make: *** [client.o] Error 1
+06:59:11 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+Building file: ../client.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"client.d" -MT"client.d" -o "client.o" "../client.c"
+../client.c: In function ‘main’:
+../client.c:47:4: warning: passing argument 1 of ‘fgets’ from incompatible pointer type [enabled by default]
+In file included from ../client.c:11:0:
+/usr/include/stdio.h:624:14: note: expected ‘char * __restrict__’ but argument is of type ‘char (*)[300]’
+Finished building: ../client.c
+ 
+Building target: ClientPROTO
+Invoking: Cross GCC Linker
+gcc  -o "ClientPROTO"  ./client.o   
+Finished building target: ClientPROTO
+ 
+06:59:43 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+make: Nothing to be done for `all'.
+07:00:44 **** Incremental Build of configuration Debug for project ClientPROTO ****
+make all 
+make: Nothing to be done for `all'.
+07:00:45 **** Incremental Build of configuration Debug for project serverPROTO ****
+make all 
+make: Nothing to be done for `all'.

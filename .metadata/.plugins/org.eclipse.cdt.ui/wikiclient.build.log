@@ -1,0 +1,6 @@
+06:14:49 **** Incremental Build of configuration Debug for project wikiclient ****
+make all 
+make: Nothing to be done for `all'.
+
+06:14:49 Build Finished (took 68ms)
+

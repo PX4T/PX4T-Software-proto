@@ -1,0 +1,33 @@
+01:36:09 **** Incremental Build of configuration Debug for project Client ****
+make all 
+Building file: ../client.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"client.d" -MT"client.d" -o "client.o" "../client.c"
+../client.c: In function ‘main’:
+../client.c:16:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+../client.c:16:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+../client.c:18:2: warning: implicit declaration of function ‘atoi’ [-Wimplicit-function-declaration]
+../client.c:23:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+../client.c:25:2: warning: implicit declaration of function ‘gethostbyname’ [-Wimplicit-function-declaration]
+../client.c:25:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+../client.c:28:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+../client.c:31:2: warning: implicit declaration of function ‘bzero’ [-Wimplicit-function-declaration]
+../client.c:31:2: warning: incompatible implicit declaration of built-in function ‘bzero’ [enabled by default]
+../client.c:33:2: warning: implicit declaration of function ‘bcopy’ [-Wimplicit-function-declaration]
+../client.c:33:2: warning: incompatible implicit declaration of built-in function ‘bcopy’ [enabled by default]
+../client.c:33:23: error: dereferencing pointer to incomplete type
+../client.c:34:10: error: dereferencing pointer to incomplete type
+../client.c:38:2: warning: passing argument 2 of ‘connect’ from incompatible pointer type [enabled by default]
+In file included from ../client.c:3:0:
+/usr/include/i386-linux-gnu/sys/socket.h:129:12: note: expected ‘const struct sockaddr *’ but argument is of type ‘struct sockaddr_in *’
+../client.c:40:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+../client.c:49:2: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+../client.c:49:2: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+../client.c:49:28: warning: incompatible implicit declaration of built-in function ‘strlen’ [enabled by default]
+../client.c:52:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+../client.c:56:2: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+../client.c:59:3: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+make: *** [client.o] Error 1
+
+01:36:09 Build Finished (took 163ms)
+

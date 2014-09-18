@@ -1,0 +1,18 @@
+05:55:37 **** Incremental Build of configuration Release for project MyBallsC ****
+make all 
+Building file: ../clientcc.c
+Invoking: Cross GCC Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"clientcc.d" -MT"clientcc.d" -o "clientcc.o" "../clientcc.c"
+../clientcc.c: In function ‘main’:
+../clientcc.c:28:7: warning: unused variable ‘buff’ [-Wunused-variable]
+../clientcc.c:25:16: warning: unused variable ‘num’ [-Wunused-variable]
+Finished building: ../clientcc.c
+ 
+Building target: MyBallsC
+Invoking: Cross GCC Linker
+gcc  -o "MyBallsC"  ./clientcc.o   
+Finished building target: MyBallsC
+ 
+
+05:55:37 Build Finished (took 221ms)
+

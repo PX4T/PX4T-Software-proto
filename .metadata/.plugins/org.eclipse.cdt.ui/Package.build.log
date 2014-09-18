@@ -1,0 +1,6 @@
+05:55:58 **** Incremental Build of configuration Release for project Package ****
+make all 
+make: Nothing to be done for `all'.
+
+05:55:59 Build Finished (took 70ms)
+

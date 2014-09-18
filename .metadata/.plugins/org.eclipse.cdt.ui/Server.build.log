@@ -1,0 +1,6 @@
+06:03:02 **** Incremental Build of configuration Release for project Server ****
+make all 
+make: Nothing to be done for `all'.
+
+06:03:02 Build Finished (took 68ms)
+
